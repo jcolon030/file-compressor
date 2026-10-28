@@ -16,6 +16,7 @@ int main(int argc, char **argv) {
     infile = fopen(argv[1], "r");
     if (infile == NULL) {
         fprintf(stderr, "Cannot open file for reading: %s\n", argv[1]);
+        return 2;
     }
 
     printf("File Compressor v0.1.0\n");
